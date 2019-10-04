@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!--
+I360 Web Design
+Final Project
+Ashley Wilkeson Portfolio
+	-->
+
+<head>
+	<meta charset="utf-8">
+	<title>Photography</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- Stylesheets -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+
+	<!-- Swipebox Plugin CSS -->
+	<link rel="stylesheet" href="components/swipebox/css/swipebox.css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+    		<script src="components/html5shiv/html5shiv.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+    <!-- HAMBUGER NAVIGATION -->
+    <div class="navbar">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a style="color:#F0D431;" href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+      <!-- TOP NAVIGATION -->
+      <div class="topnav">
+        <div class="navsection">
+          <div class="navitem"><a href="about.html">About</a></div>
+          <div class="navitem"><a style="color:#F0D431;" href="projects.html">Projects</a></div>
+        </div>
+        <a href="index.html"><img  class="logo" src="images/logo.png" alt="AW Logo"></a>
+        <div class="navsection">
+          <div class="navitem"><a href="resume.html">Resume</a></div>
+          <div class="navitem"><a href="contact.html">Contact</a></div>
+        </div>
+      </div>
+    </div>
+
+	<div class="photos">
+
+			<h1>Photo Gallery</h1>
+
+			<div class="gallery">
+
+				<!-- Swipebox Plugin HTML -->
+
+				<figure class="hvr-rotate">
+					<a href="images/treevine-lg.JPG" class="swipebox" title="A vine growing up the side of a tree.">
+							 <img src="images/treevine-sm.JPG" alt="Tree Vine">
+				</a>
+					<figcaption>A vine growing up the side of a tree.</figcaption>
+				</figure>
+
+				<figure class="hvr-rotate">
+					<a href="images/window-lg.JPG" class="swipebox hvr-rotate" title="Old window with vines climbing the walls.">
+							 <img src="images/window-sm.JPG" alt="old window">
+						 </a>
+					<figcaption>Old window with vines climbing the walls.</figcaption>
+				</figure>
+
+				<figure class="hvr-rotate">
+					<a href="images/squirrel-lg.JPG" class="swipebox hvr-rotate" title="Squirrel ready to pounce.">
+							 <img src="images/squirrel-sm.JPG" alt="squirrel">
+						 </a>
+					<figcaption>Squirrel ready to pounce.</figcaption>
+				</figure>
+
+				<figure class="hvr-rotate">
+					<a href="images/treestump-lg.JPG" class="swipebox hvr-rotate" title="Tree stump in the spring.">
+							 <img src="images/treestump-sm.JPG" alt="tree stump">
+						 </a>
+					<figcaption>Tree stump in the spring.</figcaption>
+				</figure>
+
+				<figure class="hvr-rotate">
+					<a href="images/flower-lg.jpg" class="swipebox hvr-rotate" title="Yellow flowers in the summer.">
+							 <img src="images/flower-sm.jpg" alt="flowers">
+						 </a>
+					<figcaption>Yellow flowers in the summer.</figcaption>
+				</figure>
+
+				<figure class="hvr-rotate">
+					<a href="images/branch-lg.JPG" class="swipebox hvr-rotate" title="Tree branch curving to the sky.">
+							 <img src="images/branch-sm.JPG" alt="tree branch">
+						 </a>
+					<figcaption>Tree branch curving to the sky.</figcaption>
+				</figure>
+
+			</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<section>
+				<address>
+		 Bloomington, Indiana</address>
+				<p>(574) 339-3979</p>
+				<p><a href="mailto:ashley.wilkeson@gmail.com">ashley.wilkeson@gmail.com</a></p>
+					<div class="copyright">&copy; 2017 ALL RIGHTS RESERVED</div>
+			</section>
+			<section>
+				<a href="https://twitter.com/Ashleywilkeson"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/ashley-w-4a57378b/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+			</section>
+		</div>
+	</footer>
+
+
+	<script>
+		function openNav() {
+			document.getElementById("myNav").style.height = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
+
+	<!-- Swipebox Plugin JS -->
+	<script src="components/swipebox/lib/jquery-2.1.0.min.js"></script>
+	<script src="components/swipebox/js/jquery.swipebox.js"></script>
+	<script type="text/javascript">
+		;
+		(function($) {
+
+			$('.swipebox').swipebox();
+
+		})(jQuery);
+	</script>
+
+</body>
+
+</html>

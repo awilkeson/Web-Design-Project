@@ -1,0 +1,759 @@
+/* apply a natural box layout model to all elements */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*RESPONSIVE NAVIGATION BAR*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 30px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #3e3193;
+    opacity: 0.6;
+    color: white;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #cfb53b;
+    opacity: 0.6;
+    color: white;
+
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.0em 0.5em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+.section h1{
+  font-size: 52px;
+  padding-left: 150px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+p, td, li, small, figcaption, address {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+a:link, a:visited {
+  /*color: #3e3193;*/
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: #cfb53b;
+}
+
+/* Navigation */
+
+nav {
+  background-color: white;
+}
+
+.logo img {
+  width: 375px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+nav .container {
+  padding: 1.0em 0.5em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* HEADER */
+
+header {
+  /*Photo by Alisa Anton on Unsplash*/
+  background-image: url('../images/alisa-anton-393305.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: sticky;
+  height: 400px;
+}
+
+header :hover {
+  opacity: 0.8;
+}
+
+.top_story {
+  background-color: rgba(50, 50, 50, 0.5);
+  opacity: 30%;
+  margin-top: -30px;
+  padding-top: 290px;
+  width: cover;
+  text-align: left;
+  color: white;
+}
+
+.top_story h1 {
+  font-size: 42px;
+  text-decoration: none;
+}
+
+/* ARTICLES*/
+
+.articles {
+  background-image: radial-gradient(circle at center, #000000);
+  margin-top: 1.0em;
+}
+
+.articles .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.articles figure {
+  margin: 0 0.5em 1.0em;
+  padding: 0;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+}
+
+.articles img {
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.articles img:hover {
+  opacity: 0.8;
+}
+
+.articles .article_title {
+  background-color: rgba(226, 226, 255, 0.8);
+  padding: 1.5em 0 0.5em;
+  text-align: left;
+  position: absolute;
+  bottom: 4px;
+  height: 68px;
+  width: 300px;
+}
+
+.articles .article_title h2, p {
+  margin-top: -20px;
+  padding-left: 0.5em;
+}
+
+.articles h1 {
+  font-size: 52px;
+  margin-left: 150px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+.articles h3 {
+  font-size: 16px;
+  padding-left: 0.75em;
+  margin-top: -20px;
+}
+
+/* CONTESTS */
+
+.contests {
+  background-color: #dbc78a;
+}
+
+.contests .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  color: black;
+}
+
+.contests .container .intro .contest_image {
+  background-image: url(../images/horse_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 30px;
+  width: 100%;
+  height: 400px;
+}
+
+.contests .container .intro h2 {
+  font-size: 24px;
+  text-align: left;
+  color: white;
+}
+
+.contests .container .intro p {
+  font-size: 14px;
+  text-align: left;
+  color: white;
+}
+
+.contests section {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px 30px;
+  margin: 2.0em 15px 1.0em;
+  flex: 1 0 250px;
+  position: relative;
+}
+
+.contests i {
+  color: black;
+  position: absolute;
+  top: -25px;
+  left: 44%
+}
+
+/* Origin Story */
+
+.origin_story {
+  background-color: white;
+}
+
+.origin_story .container {
+  color: black;
+}
+
+.origin_story .container div .email {
+  color: #3e3193;
+  font-weight: bold;
+}
+
+.origin_story h2 {
+  font-size: 24px;
+  text-align: left;
+  padding-left: 60px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.origin_story .container p {
+  font-size: 14px;
+  text-align: left;
+}
+
+/*ARTICLE PAGES*/
+
+.article h1{
+    font-size: 28px;
+    text-align: left;
+    padding-left: 40px;
+}
+.article h2 {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 40px;
+  margin-top: -20px;
+}
+
+.article h3{
+    font-size: 16px;
+    text-align: left;
+    margin-top: -20px;
+    padding-left: 140px;
+}
+
+.article .container p {
+  font-size: 14px;
+  text-align: left;
+}
+
+
+.article .article_image {
+  width: 400px;
+  height: 300px;
+}
+
+.article img:hover{
+  opacity:0.8;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #ccc;
+  opacity: 30%;
+}
+
+footer .container .masthead p {
+  font-size: 14px;
+  text-align: left;
+  font-style: italic;
+}
+
+footer p, footer address {
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  font-style: normal;
+  line-height: 1.3em;
+  text-align: left;
+}
+
+footer i {
+  margin-right: 14px;
+}
+
+footer a i {
+  color: #3e3193;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+footer a:hover i {
+  color: #cfb53b;
+}
+
+/*NEWS PAGE IMAGES*/
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gallery a {
+    margin: 0.5em;
+}
+
+.gallery a:hover{
+  opacity: 0.8;
+}
+
+.gallery figure img{
+  width: 300px;
+  height: 200px;
+}
+.gallery figcaption{
+  max-width: 300px;
+  font-family: 'Indie Flower', cursive;
+  padding: 1em 0.5em 0.5em;
+  font-size: 20px;
+}
+
+.gallery figure{
+  background-color: #ededed;
+  padding: 20px 10px 0;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+}
+
+
+/*ROTATE*/
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+/* MEDIA QUERIES */
+
+/*NAVIGATION*/
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1052px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1052px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  /*LOGO*/
+  .logo img {
+    width: 500px;
+    margin-top: -60px;
+    margin-bottom: -40px;
+  }
+  /*CONTESTS*/
+  .contests .container .intro .contest_image {
+    background-image: url(../images/horse_sm.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 250px;
+    margin-right: 100px;
+  }
+
+  .article h1{
+      font-size: 28px;
+      text-align: left;
+      padding-left: 40px;
+  }
+
+  .article h2 {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 40px;
+    margin-top: -20px;
+  }
+
+  .article h3{
+      font-size: 18px;
+      text-align: left;
+      margin-top: -20px;
+      padding-left: 40px;
+  }
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  /*LOGO*/
+  .logo img {
+    width: 600px;
+    margin-top: -60px;
+    margin-bottom: -40px;
+  }
+  /*CONTESTS*/
+  .contests .container .intro .contest_image {
+    background-image: url(../images/horse_lg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 700px;
+    height: 400px;
+  }
+  /*COLUMNS*/
+  .origin_story .container {
+    color: black;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .origin_story .container>div {
+    width: 50%;
+    padding: 10px;
+  }
+  .origin_story .container>div:first-child {
+    margin-right: 20px;
+  }
+
+  /*COLUMNS*/
+  .article .container {
+    color: black;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .article .container>div {
+    width: 50%;
+    padding: 10px;
+  }
+  .article .container>div:first-child {
+    margin-right: 20px;
+  }
+
+  .articles h2 {
+    font-size: 32px;
+    padding-left: 0.75em;
+  }
+
+  .origin_story h2 {
+    font-size: 32px;
+  }
+
+  .articles h3 {
+    font-size: 20px;
+    padding-left: 0.5em;
+    margin-top: -20px;
+  }
+
+  .article h1{
+      font-size: 32px;
+      text-align: left;
+      padding-left: 80px;
+  }
+  .article h2 {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 80px;
+    margin-top: -20px;
+  }
+
+  .article h3{
+      font-size: 18px;
+      text-align: left;
+      margin-top: -20px;
+      padding-left: 80px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  /*LOGO*/
+  .logo img {
+    width: 900px;
+    margin-top: -60px;
+    margin-bottom: -40px;
+  }
+  /*CONTESTS*/
+  .contests .container .intro {
+    margin-left: 10em;
+  }
+  .contests .container .intro h2 {
+    font-size: 42px;
+    text-align: left;
+    color: white;
+  }
+  .contests .container .intro p {
+    font-size: 16px;
+    text-align: left;
+    color: white;
+  }
+  .contests .container .intro .contest_image {
+    background-image: url(../images/horse_lg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 700px;
+    height: 400px;
+  }
+  /*COLUMNS*/
+  .origin_story .container {
+    color: black;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .origin_story .container>div {
+    width: 50%;
+    padding: 10px;
+  }
+  .origin_story .container>div:first-child {
+    margin-right: 20px;
+  }
+
+  /*COLUMNS*/
+  .article .container {
+    color: black;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .article .container>div {
+    width: 50%;
+    padding: 10px;
+  }
+  .article .container>div:first-child {
+    margin-right: 20px;
+  }
+
+
+  .articles h2 {
+    font-size: 42px;
+    padding-left: 0.75em;
+  }
+
+  .origin_story h2 {
+    font-size: 42px;
+  }
+
+  .articles h3 {
+    font-size: 24px;
+    padding-left: 0.5em;
+    margin-top: -20px;
+  }
+
+  .article h1{
+      font-size: 42px;
+      text-align: left;
+      padding-left: 140px;
+  }
+  .article h2 {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 140px;
+    margin-top: -20px;
+  }
+
+  .article h3{
+      font-size: 18px;
+      text-align: left;
+      margin-top: -20px;
+      padding-left: 140px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  /*LOGO*/
+  .logo img {
+    width: 900px;
+    margin-top: -60px;
+    margin-bottom: -40px;
+  }
+  /*CONTESTS*/
+  .contests .container .intro {
+    margin-left: 10em;
+  }
+  .contests .container .intro h2 {
+    font-size: 42px;
+    text-align: left;
+    color: white;
+  }
+  .contests .container .intro p {
+    font-size: 16px;
+    text-align: left;
+    color: white;
+  }
+  .contests .container .intro .contest_image {
+    background-image: url(../images/horse_lg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 700px;
+    height: 400px;
+  }
+  /*COLUMNS*/
+  .origin_story .container {
+    color: black;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .origin_story .container>div {
+    width: 50%;
+    padding: 10px;
+  }
+  .origin_story .container>div:first-child {
+    margin-right: 20px;
+  }
+
+  /*COLUMNS*/
+  .article .container {
+    color: black;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .article .container>div {
+    width: 50%;
+    padding: 10px;
+  }
+  .article .container>div:first-child {
+    margin-right: 20px;
+  }
+
+  .articles h2 {
+    font-size: 42px;
+    padding-left: 0.75em;
+  }
+
+  .origin_story h2 {
+    font-size: 42px;
+  }
+
+  .articles h3 {
+    font-size: 24px;
+    padding-left: 0.5em;
+    margin-top: -25px;
+  }
+
+  .article h1{
+      font-size: 42px;
+      text-align: left;
+      padding-left: 140px;
+  }
+
+  .article h2 {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 140px;
+    margin-top: -20px;
+  }
+
+  .article h3{
+      font-size: 18px;
+      text-align: left;
+      margin-top: -20px;
+      padding-left: 140px;
+  }
+}

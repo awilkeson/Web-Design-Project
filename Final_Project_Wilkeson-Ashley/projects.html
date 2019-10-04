@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+		I360 Web Design
+		Final Project
+    Ashley Wilkeson Portfolio
+	-->
+
+
+<head>
+  <title>Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+  <!-- Stylesheets -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://use.fontawesome.com/d16ae9f79c.js"></script>
+
+  <!--[if lt IE 9]>
+        		<script src="components/html5shiv/html5shiv.min.js"></script>
+    		<![endif]-->
+
+  <!-- STYLE SHEETS FOR ACCORDION -->
+  <!-- Style for the demo page -->
+  <link rel="stylesheet" type="text/css" href="components/accordion/css/demo.css" />
+  <!-- Style of the component -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <noscript>
+			<link rel="stylesheet" type="text/css" href="components/accordion/css/styleNoJS.css" />
+		</noscript>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&v2' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+  <!-- HAMBUGER NAVIGATION -->
+  <div class="navbar">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="about.html">About</a>
+        <a style="color:#F0D431;" href="projects.html">Projects</a>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <!-- TOP NAVIGATION -->
+    <div class="topnav">
+      <div class="navsection">
+        <div class="navitem"><a href="about.html">About</a></div>
+        <div class="navitem"><a style="color:#F0D431;" href="projects.html">Projects</a></div>
+      </div>
+      <a href="index.html"><img  class="logo" src="images/logo.png" alt="AW Logo"></a>
+      <div class="navsection">
+        <div class="navitem"><a href="resume.html">Resume</a></div>
+        <div class="navitem"><a href="contact.html">Contact</a></div>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <!-- Thank you to Mary Lou via codrops.net for the Accordion -->
+    <!-- ACCORDION -->
+    <div class="accordion">
+      <div class="container">
+        <div id="va-accordion" class="va-container">
+          <div class="va-wrapper">
+            <div class="va-slice va-slice-1">
+              <h3 class="va-title">Photography</h3>
+              <div class="va-content">
+                <p>Photography has always been a big passion of mine, and I enjoy taking my camera out for a shoot.
+                  The photographs I've gathered at the link below are capturing the nature with a majority being taken at Indiana University Bloomington.
+                </p>
+                <p>This photos were taken with a CANON DSLR 2015, Enjoy!</p>
+                <br>
+                <a href="photography.html" class="button">View Photography</a>
+
+              </div>
+            </div>
+            <div class="va-slice va-slice-2">
+              <h3 class="va-title">Cougar Chronicle</h3>
+              <div class="va-content">
+                <p>I was on the highscool newspaper staff a few years ago and wanted to start a website for them,
+                  I designed one then but it was never published. Last summer I designed one for them to use with Muse and
+                  it was in need of updates after a recent crash. So for I360, a web design class at IUB, I redesigned a website for them to use.
+                </p>
+                <p>Although they will not be using this design, due to their need to use Muse for ease of use for students who do not know HTML/CSS, I continue to work with the New Prairie High School
+                  Newspaper advisor and staff to create a website that has the modern, historic feel they want on a platform that they can update.
+                </p>
+                <p> Below is a link to the design created for the I360 course.</p>
+                <br>
+                <a href="cougar_chronicle/index.html" class="button">View Website</a>
+
+              </div>
+            </div>
+            <div class="va-slice va-slice-3">
+              <h3 class="va-title">Serious Tech for Hikers</h3>
+              <div class="va-content">
+                <p>A group I was a member of was tasked with creating a agumented reality design to be used by hikers for the I300 course at Indiana University.
+                </p>
+                <p>Below you can click to view the design my team created for creating Serious Tech for Serious Hikers.
+                </p>
+                <br>
+                <a href="serious_tech.html" class="button">View Project</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="components/accordion/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="components/accordion/js/jquery.vaccordion.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#va-accordion').vaccordion({
+          visibleSlices: 3,
+          expandedHeight: 500,
+          animOpacity: 0.1,
+          contentAnimSpeed: 100
+        });
+      });
+    </script>
+
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <section>
+        <address>
+    			 Bloomington, Indiana</address>
+        <p>(574) 339-3979</p>
+        <p><a href="mailto:ashley.wilkeson@gmail.com">ashley.wilkeson@gmail.com</a></p>
+          <div class="copyright">&copy; 2017 ALL RIGHTS RESERVED</div>
+      </section>
+      <section>
+        <a href="https://twitter.com/Ashleywilkeson"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/ashley-w-4a57378b/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      </section>
+    </div>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
+</body>
+
+</html>

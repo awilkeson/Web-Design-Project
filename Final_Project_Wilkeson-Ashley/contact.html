@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!--
+		I360 Web Design
+		Final Project
+    Ashley Wilkeson Portfolio
+	-->
+<!-- Contact Form:
+Thank you to Bobby Korec (https://codepen.io/bobbykorec/pen/qOGbyr) -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+  <!-- Stylesheets -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+<link href="components/contact/contact.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://use.fontawesome.com/d16ae9f79c.js"></script>
+
+
+  <!--[if lt IE 9]>
+    		<script src="components/html5shiv/html5shiv.min.js"></script>
+		<![endif]-->
+
+  </head>
+
+
+
+  <body>
+    <!-- HAMBUGER NAVIGATION -->
+    <div class="navbar">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a style="color:#F0D431;" href="contact.html">Contact</a>
+      </div>
+    </div>
+    <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <!-- TOP NAVIGATION -->
+    <div class="topnav">
+      <div class="navsection">
+        <div class="navitem"><a href="about.html">About</a></div>
+        <div class="navitem"><a href="projects.html">Projects</a></div>
+      </div>
+      <a href="index.html"><img  class="logo" src="images/logo.png" alt="AW Logo"></a>
+      <div class="navsection">
+        <div class="navitem"><a href="resume.html">Resume</a></div>
+        <div class="navitem"><a style="color:#F0D431;" href="contact.html">Contact</a></div>
+      </div>
+    </div>
+  </div>
+
+<!-- CONTACT FORM -->
+<section id="contact">
+
+  <h1 class="section-header">Contact</h1>
+
+  <div class="contact-wrapper">
+
+      <!--
+
+      CONTACT PAGE LEFT
+
+                       -->
+
+    <form class="form-horizontal" action="contact-form-handler.php" method="POST">
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email">
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+          <i class="button fa fa-paper-plane"></i><span class="send-text">SEND</span>
+      </button>
+
+    </form>
+
+      <!--
+
+      CONTACT PAGE RIGHT
+
+                         -->
+
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Bloomington | IN</span></i></li>
+
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-574-339-3979" title="Give me a call">(574) 339-3979</a></span></i></li>
+
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:ashley.wilkeson@gmail.com" title="Send me an email">ashley.wilkeson@gmail.com</a></span></i></li>
+
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="https://github.iu.edu/awilkeso" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://twitter.com/Ashleywilkeson" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/ashley-w-4a57378b/" target="_blank" class="contact-icon">
+            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://codepen.io/awilkeson/" target="_blank" class="contact-icon">
+            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <hr>
+
+      </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- Footer -->
+  <footer>
+    <div class="container">
+			<section>
+				<address>
+			 Bloomington, Indiana</address>
+				<p>(574) 339-3979</p>
+				<p><a href="mailto:ashley.wilkeson@gmail.com">ashley.wilkeson@gmail.com</a></p>
+        <div class="copyright">&copy; 2017 ALL RIGHTS RESERVED</div>
+      </section>
+			<section>
+				<a href="https://twitter.com/Ashleywilkeson"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/ashley-w-4a57378b/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+			</section>
+		</div>
+  </footer>
+
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+  </body>
+
+
+</html>

@@ -1,0 +1,161 @@
+/* Vertical Accordion Style */
+@font-face {
+font-family: "Snell Roundhand";
+src: url("../components/Snell Roundhand Font/Roundhand Bold.ttf");
+src: url("../components/Snell Roundhand Font/roundhand_bold-webfont.woff") format("woff");
+}
+/* Vertical Accordion Style */
+.accordion .va-container{
+	/*position:relative;*/
+	margin:0 auto 0 auto;
+	scroll-behavior: smooth;
+}
+.accordion .va-wrapper{
+	margin-top: -110px;
+	width:100%;
+	height:575px;
+	/*position:relative;*/
+	overflow:hidden;
+	background:#fff;
+	border-radius: 5px;
+}
+
+.accordion .va-slice{
+	cursor:pointer;
+	/*position:absolute;*/
+	width:100%;
+	left:0px;
+	overflow:hidden;
+	border: 0.5px dotted black;
+	/*box-shadow: 1px solid #000;*/
+}
+
+.accordion .va-slice:hover{
+
+	background-color: rgba(167, 168, 168, 0.7);
+}
+.accordion .va-slice-1{
+	background:#a7a8a8;
+}
+.accordion .va-slice-2{
+	background:#a7a8a8;
+}
+.accordion .va-slice-3{
+	background:#a7a8a8;
+}
+
+
+/* Buttons */
+
+.accordion .button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  height: 54px;
+  line-height: 54px;
+  text-decoration: none;
+  color: #fff !important;
+  background-color: #f2ce5b;
+  text-align: center;
+  letter-spacing: .5px;
+  padding: 0 2rem;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  outline: 0;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.accordion .button:hover {
+  background-color: #F0D431;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+
+
+
+/*.accordion .va-slice-color-1{
+	background-color:#97c5eb;
+
+}
+.accordion .va-slice-color-2{
+	background-color:#68ace5;
+
+}
+.accordion .va-slice-color-3{
+	background-color:#0072cf;
+
+}*/
+
+.accordion .va-title{
+	font-family: 'Snell Roundhand', sans-serif;
+	font-size:60px;
+	margin-left:20px;
+	color:#fff;
+	text-shadow: 0px 0px 1px white;
+}
+.accordion .va-content{
+	display:block;
+	margin-left:25px;
+	padding: 0.5em;
+	overflow-y: scroll;
+}
+
+.accordion .va-slice p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	padding-right: 1.0em;
+
+}
+.accordion .va-slice ul{
+	margin-top:20px;
+}
+.accordion .va-slice ul li{
+	float:left;
+	margin:0px 2px;
+}
+.accordion .va-slice ul li a{
+	color:#fff;
+	background:#eede2f;
+	padding:3px 6px;
+	font-size:14px;
+	font-family: 'Snell Roundhand', sans-serif;
+}
+.accordion .va-slice ul li:hover{
+	color:#fff;
+	text-shadow:none;
+}
+.accordion .va-nav span{
+	width:40px;
+	height:25px;
+	background:transparent url(../images/prev.png) no-repeat center center;
+	/*position:absolute;*/
+	top:-35px;
+	left:50%;
+	margin-left:-20px;
+	text-indent:-9000px;
+	/*opacity:0.7;*/
+	cursor:pointer;
+	display:none;
+	/*z-index:100;*/
+}
+.accordion .va-nav span.va-nav-next{
+	background-image:url(../images/next.png);
+	top:auto;
+	bottom:-5px;
+}
+.accordion .va-nav span:hover{
+	/*opacity:1.0;*/
+}
